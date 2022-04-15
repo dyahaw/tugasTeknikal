@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Prediksi Berat Badan</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>Mari Prediksi Berat Badan Kamu!</h1>
+			<p>Berdasarkan Gender dan Tinggi Badan Kamu</p>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Content -->
+			<section id="content" class="main">
+				<span class="image main"><img src="images/beratbadan2.jpg" alt="" /></span>
+				<div class="bg-gray-200 min-h-screen pt-2 font-mono my-16">
+					<div class="container flex mx-auto">
+						<div class="inputs w-full max-w-2xl p-6">
+							<h2 class="text-2xl text-gray-900">Klasifikasi Jenis Kelamin</h2>
+							<form class="mt-6 border-t border-gray-400 pt-4" method="POST" action="">
+								<div class='flex flex-wrap -mx-3 mb-6'>
+									<div class='w-full md:w-full px-3 mb-6'>
+										<label
+											class='block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2'
+											for='grid-text-3'>Berat badan (Weight)</label>
+										<select name="gender" class="custom-select" id="gender" required="">
+											<option value="1">Male</option>
+											<option value="0">Female</option>
+										</select>
+									</div>
+									<div class='w-full md:w-full px-3 mb-6'>
+										<br />
+										<label
+											class='block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2'
+											for='grid-text-4'>Tinggi badan (Height in Inch)</label>
+										<input type="text"
+											class='appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500'
+											id='grid-text-4' type='text' placeholder='Masukkan tinggi badan (inch)'
+											name="height" required>
+									</div>
+								</div>
+								<br />
+								<div align="center" class="flex justify-end ">
+									<button
+										class="appearance-none bg-gray-200 text-gray-900 px-2 py-1 shadow-sm border border-gray-400 rounded-md hover:bg-gray-300"
+										type="submit">Get Prediction</button>
+								</div>
+						</div>
+						</form>
+						{% if result is defined %}
+						<div class="prediction-result w-full max-w-2xl p-6">
+							<h2 class="text-2xl text-gray-900">Hasil Prediksi berat badan</h2>
+							<h2 class="mx-auto text-3xl text-center px-2 py-2 bg-gray-300 rounded rounded-full mt-5">
+								{{result}} Pounds</h1>
+						</div>
+						{% endif %}
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Group Name</h2>
+				<ol>
+					<li>Muhammad Hafizh Azzasafah</li>
+					<li>Dyah Ayu Wulandari</li>
+					<li>Abi Aryaza</li>
+				</ol>
+				<ul class="actions">
+					<li><a href="generic.html" class="button">Get Prediction</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Orbit Future Academy</h2>
+				<dl class="alt">
+					<dt>Address</dt>
+					<dd>Veteran RI Building 15th Floor Plaza Semanggi, Jl. Jend. Sudirman No.Kav. 50, RT.1/RW.4, Karet
+						Semanggi, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12930</dd>
+					<dt>Phone</dt>
+					<dd>0822-6076-0513</dd>
+					<dt>Email</dt>
+					<dd><a href="mailto:info@orbitfutureacademy.id">info@orbitfutureacademy.id</a></dd>
+				</dl>
+				<ul class="icons">
+					<li><a href="https://twitter.com/orbitacademyid" class="icon brands fa-twitter alt"><span
+								class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/orbitfutureacademy/"
+							class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/orbitfutureacademyid"
+							class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+				</ul>
+			</section>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
